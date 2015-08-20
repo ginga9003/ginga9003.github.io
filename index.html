@@ -1,15 +1,175 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equip="X-UA-Compatible" content="edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Hello, world2!</h1>
+    <meta keyword="">
+    <meta description="">
+    <title>ポートフォリオ</title>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">ポートフォリオ</a>
+                </div>
+                <div id="nav-menu" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> menu1</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> menu2</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> menu3</a></li>
+                        <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> menu4 
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> submenu1</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> submenu2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- #header -->
+
+    <!-- slider -->
+	<div class="flexslider">
+        <ul class="slides">
+            <li><a href="#"><img src="images/top_spring.jpg" /></a></li>
+            <li><a href="#"><img src="images/top_summer.jpg" /></a></li>
+            <li><a href="#"><img src="images/top_autumn.jpg" /></a></li>
+            <li><a href="#"><img src="images/top_winter.jpg" /></a></li>
+        </ul>
+    </div>
+    <!-- #slider -->
+
+    <h2><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> 開発実績</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3>GLAY セトリラボ</h3>
+                <a href="http://elegant-house-c.sakura.ne.jp/glay/" target="_blank" class="thumbnail" data-toggle="tooltip" title="GLAY セトリラボ"><img src="images/top_title.png" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <h3>しりとり学園</h3>
+                <a href="https://itunes.apple.com/jp/app/shiritori-school/id590502107?l=ja&ls=1&mt=8" target="_blank" class="thumbnail" data-toggle="tooltip" title="しりとり学園"><img src="images/shiritori.png" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <h3>Shuffle Music Theater</h3>
+                <a href="https://itunes.apple.com/jp/app/shuffle-music-theater/id663831317?mt=8" target="_blank" class="thumbnail" data-toggle="tooltip" title="Shuffle Music Theater"><img src="images/shuffle.png" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <h3>実績4</h3>
+                <a href="#" target="_blank" class="thumbnail" data-toggle="tooltip" title="実績4"><img src="images/top_winter.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <h2><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> 進捗状況</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_spring.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>タスク1</h3>
+                        <p>タスク内容</p>
+                        <p><a href="#" id="MyModal" data-toggle="modal" data-target="myModal" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_summer.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">0%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>タスク2</h3>
+                        <p>タスク内容</p>
+                        <p><a href="#" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_autumn.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">0%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>タスク3</h3>
+                        <p>タスク内容</p>
+                        <p><a href="#" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_winter.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">0%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>タスク4</h3>
+                        <p>タスク内容</p>
+                        <p><a href="#" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- リモートモーダルダイアログ の読込先 -->
+  <div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Bootstrap: modal.js v3.3.5 では、[this.$element.find('.modal-content')...] している -->
+      </div> <!-- /.modal-content -->
+    </div> <!-- /.modal-dialog -->
+  </div> <!-- /.modal -->
+
+    <!-- footer -->
+    <footer>
+        <p class="container">
+            <p class="text-muted" style="text-align: center;">&copy; 2015 Junichi.Tasaki</p>
+        </div>
+    </footer>
+    <!-- #footer -->
+</body>
 </html>
