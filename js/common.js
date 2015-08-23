@@ -4,6 +4,12 @@ $(function () {
         $('#remoteModal').removeData('bs.modal'); //< 毎回新規に読み込み
         $('#remoteModal').modal({ 'remote': 'dialog.html' });
     });
+    
+    // 開発実績ページ向け
+    $('#MyModal').on('click', function () {
+        $('#remoteModal').removeData('bs.modal'); //< 毎回新規に読み込み
+        $('#remoteModal').modal({ 'remote': 'dialog.html' });
+    });
     //// ダイアログ表示前にJavaScriptで操作する
     //$('#remoteModal').on('loaded.bs.modal', function (e) {
     //    $('#remoteModal .modal-body').append('<a class="btn btn-info" href="#addjs">JavaScript で追加したボタン</a>');

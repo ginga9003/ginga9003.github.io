@@ -3,4 +3,72 @@ body {
     margin: 0;
 }
 
+.intro-wrapper {
+    /* 1:1.65の比率 */
+/*    width: 800px;*/
+    width: 717px;
+}
+.intro {
+    width: 717px;
+}
+.intro-content {
+    height: 433px;
+    font-size: 1.4em;
+    color: #535353;
+    border: 3px solid #535353;
+    padding: 20px 20px;
+}
+.intro-content img {
+    border: 3px solid white;
+    margin-top: 70px;
+}
+.reverse-button {
+    width: 65px;
+    height: 65px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    padding: 20px 15px;
+}
+.reverse-button:hover {
+    cursor: pointer;
+}
+
+.bgc-white {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.aRight { text-align: right; }
+.aLeft { text-align: left; }
+
+.mgl5 { margin-left: 5px; }
+.mgl10 { margin-left: 10px; }
+.mgl15 { margin-left: 15px; }
+.mgl20 { margin-left: 20px; }
+.mgl30 { margin-left: 30px; }
+.mgl40 { margin-left: 40px; }
+.mgl50 { margin-left: 50px; }
+
+.mgr5 { margin-right: 5px; }
+.mgr10 { margin-right: 10px; }
+.mgr15 { margin-right: 15px; }
+.mgr20 { margin-right: 20px; }
+.mgr30 { margin-right: 30px; }
+.mgr40 { margin-right: 40px; }
+.mgr50 { margin-right: 50px; }
+
+.mgt5 { margin-top: 5px; }
+.mgt10 { margin-top: 10px; }
+.mgt15 { margin-top: 15px; }
+.mgt20 { margin-top: 20px; }
+.mgt30 { margin-top: 30px; }
+.mgt40 { margin-top: 40px; }
+.mgt50 { margin-top: 50px; }
+
+.mgb5 { margin-bottom: 5px; }
+.mgb10 { margin-bottom: 10px; }
+.mgb15 { margin-bottom: 15px; }
+.mgb20 { margin-bottom: 20px; }
+.mgb30 { margin-bottom: 30px; }
+.mgb40 { margin-bottom: 40px; }
+.mgb50 { margin-bottom: 50px; }
 

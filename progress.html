@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equip="X-UA-Compatible" content="edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta keyword="ポートフォリオ,BootCamp,Ruby,Rails,自己紹介,GLAY,アプリ">
+    <meta description="Junichi Tasakiのポートフォリオサイト">
+    <title>進捗状況</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/octicons/octicons.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Junichi Tasaki ポートフォリオ</a>
+                </div>
+                <div id="nav-menu" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 自己紹介</a></li>
+                        <li><a href="result.html"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> 開発実績</a></li>
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 進捗状況</a></li>
+                        <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="glyphicon glyphicon-link" aria-hidden="true"></span> その他 
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="gallery.html"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> ギャラリー</a></li>
+                                <li><a href="link.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 関連リンク</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- #header -->
+
+    <div class="alert alert-danger mgl20 mgr20" role="alert">＊本ページはBootCamp期間中のみ公開</div>
+    <h2 class="mgl20"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 進捗状況</h2>
+    <h4 class="mgl20">BootCampの各課題の進捗状況です。</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_spring.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>ポートフォリオ</h3>
+                        <div class="mgb10">
+                            <a href="#" target="_blank" data-toggle="tooltip" title="GitHub"><span class="octicon octicon-mark-github" style="font-size: 1.8em;"></span></a>
+                            <span class="label label-primary">HTML</span>
+                            <span class="label label-warning">CSS</span>
+                            <span class="label label-info">jquery</span>
+                        </div>
+                        <p>自分のポートフォリオサイトを作成する</p>
+                        <p><a href="#" id="MyModal" data-toggle="modal" data-target="myModal" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_summer.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">30%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>メッセージボード</h3>
+                        <div class="mgb10">
+                            <a href="#" target="_blank" data-toggle="tooltip" title="GitHub"><span class="octicon octicon-mark-github" style="font-size: 1.8em;"></span></a>
+                            <span class="label label-danger">Ruby</span>
+                            <span class="label label-primary">HTML</span>
+                            <span class="label label-warning">CSS</span>
+                        </div>
+                        <p>メッセージボードを良い感じに仕上げる</p>
+                        <p><a href="#" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_autumn.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">0%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>twitterクローン</h3>
+                        <div class="mgb10">
+                            <a href="#" target="_blank" data-toggle="tooltip" title="GitHub"><span class="octicon octicon-mark-github" style="font-size: 1.8em;"></span></a>
+                            <span class="label label-danger">Ruby</span>
+                            <span class="label label-primary">HTML</span>
+                            <span class="label label-warning">CSS</span>
+                        </div>
+                        <p>twitterクローンを作成する。マジで!?</p>
+                        <p><a href="#" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_winter.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">0%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>モノリスト</h3>
+                        <div class="mgb10">
+                            <a href="#" target="_blank" data-toggle="tooltip" title="GitHub"><span class="octicon octicon-mark-github" style="font-size: 1.8em;"></span></a>
+                            <span class="label label-danger">Ruby</span>
+                            <span class="label label-primary">HTML</span>
+                            <span class="label label-warning">CSS</span>
+                        </div>
+                        <p>モノリストというリストを作成する</p>
+                        <p><a href="#" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#"><img src="images/top_spring.jpg" alt="" /></a>
+                    <div class="progress" style="margin-top: 10px;">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">0%</div>
+                    </div>
+                    <div class="caption" style="margin-top: -30px;">
+                        <h3>オリジナルサービス</h3>
+                        <div class="mgb10">
+                            <a href="#" target="_blank" data-toggle="tooltip" title="GitHub"><span class="octicon octicon-mark-github" style="font-size: 1.8em;"></span></a>
+                            <span class="label label-danger">Ruby</span>
+                            <span class="label label-primary">HTML</span>
+                            <span class="label label-warning">CSS</span>
+                        </div>
+                        <p>オリジナルサービスを作成する</p>
+                        <p><a href="#" id="MyModal" data-toggle="modal" data-target="myModal" class="btn btn-primary btn-block" role="button">詳細を見る</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <!-- リモートモーダルダイアログ -->
+    <div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true" data-show="true" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- Bootstrap: modal.js v3.3.5 では、[this.$element.find('.modal-content')...] している -->
+            </div> <!-- /.modal-content -->
+        </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
+
+    <!-- footer -->
+    <footer>
+        <p class="container">
+            <p class="text-muted text-center">&copy; 2015 Junichi.Tasaki</p>
+        </div>
+    </footer>
+    <!-- #footer -->
+</body>
+</html>
