@@ -3,34 +3,9 @@ body {
     margin: 0;
 }
 
-.intro-wrapper {
-    /* 1:1.65の比率 */
-/*    width: 800px;*/
-    width: 717px;
-}
-.intro {
-    width: 717px;
-}
-.intro-content {
-    height: 433px;
-    font-size: 1.4em;
-    color: #535353;
-    border: 3px solid #535353;
-    padding: 20px 20px;
-}
-.intro-content img {
-    border: 3px solid white;
-    margin-top: 70px;
-}
-.reverse-button {
-    width: 65px;
-    height: 65px;
-    border: 1px solid transparent;
-    border-radius: 50%;
-    padding: 20px 15px;
-}
-.reverse-button:hover {
-    cursor: pointer;
+.row-wrapper {
+    border: 2px solid #535353; 
+    box-shadow: 5px 5px 5px #d3d3d3;
 }
 
 .bgc-white {

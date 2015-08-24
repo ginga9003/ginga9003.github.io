@@ -8,30 +8,13 @@
     <meta name="description" content="Junichi Tasakiのポートフォリオサイト">
     <meta name="author" content="Junichi Tasaki">
     <meta name="robots" content="noindex,nofollow">
-    <title>ギャラリー</title>
+    <title>関連リンク</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/flexslider.css" />
 
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            //SyntaxHighlighter.all();
-        });
-        $(window).load(function () {
-            $('.flexslider').flexslider({
-                animation: "slide",
-                controlNav: "thumbnails",
-                start: function (slider) {
-                    $('body').removeClass('loading');
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     <!-- header -->
@@ -56,8 +39,8 @@
                             <span class="glyphicon glyphicon-link" aria-hidden="true"></span> その他 
                             <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> ギャラリー</a></li>
-                                <li><a href="link.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 関連リンク</a></li>
+                                <li><a href="gallery.html"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> ギャラリー</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 関連リンク</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -67,18 +50,17 @@
     </header>
     <!-- #header -->
 
-    <h2 class="mgl20"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> ギャラリー</h2>
+    <h2 class="mgl20"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> 関連リンク</h2>
 
-    <!-- slider -->
-	<div class="flexslider">
-        <ul class="slides">
-            <li data-thumb="images/top_spring.jpg"><a href="#"><img src="images/top_spring.jpg" alt="写真1" /></a></li>
-            <li data-thumb="images/top_summer.jpg"><a href="#"><img src="images/top_summer.jpg" alt="写真2" /></a></li>
-            <li data-thumb="images/top_autumn.jpg"><a href="#"><img src="images/top_autumn.jpg" alt="写真3" /></a></li>
-            <li data-thumb="images/top_winter.jpg"><a href="#"><img src="images/top_winter.jpg" alt="写真4" /></a></li>
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h3 class="text-center">現在作成中</h3></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- #slider -->
     
     <!-- footer -->
     <footer>
